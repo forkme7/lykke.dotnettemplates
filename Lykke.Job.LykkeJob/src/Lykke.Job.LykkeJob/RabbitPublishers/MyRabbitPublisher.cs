@@ -34,7 +34,6 @@ namespace Lykke.Job.LykkeJob.RabbitPublishers
                 .SetPublishStrategy(new DefaultFanoutPublishStrategy(settings))
                 .PublishSynchronously()
                 .SetLogger(_log)
-                .SetConsole(new LogToConsole())
                 .Start();
         }
 
