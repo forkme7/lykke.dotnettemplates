@@ -41,12 +41,10 @@ namespace Lykke.Service.LykkeService.Modules
                 .SingleInstance();
 
             builder.RegisterType<StartupManager>()
-                .As<IStartupManager>()
-                .SingleInstance();
+                .As<IStartupManager>();
 
             builder.RegisterType<ShutdownManager>()
-                .As<IShutdownManager>()
-                .SingleInstance();
+                .As<IShutdownManager>();
 
             // TODO: Add your dependencies here
 
